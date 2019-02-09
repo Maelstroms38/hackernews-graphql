@@ -44,7 +44,9 @@ class Link extends Component {
 	      </div>
 	      <div className="ml1">
 	        <div>
-	          {this.props.link.description} ({this.props.link.url})
+	         <a href={this.props.link.url} target="_blank">
+	          {this.props.link.description}
+	          </a>
 	        </div>
 	        <div className="f6 lh-copy gray">
 	          {this.props.link.votes.length} votes | by{' '}
